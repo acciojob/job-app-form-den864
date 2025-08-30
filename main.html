@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form action="" method="post">
 
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gender_m" value="male" required> Male
+        <input type="radio" name="gender" id="gender_f" value="male"> Female
+        <br>
+
+        <label for="laptop">Laptop Brands</label>
+        <select name="laptop" id="laptop">
+            <option value=""  disabled selected>Select from below</option>
+            <option value="apple">apple</option>
+            <option value="asus">asus</option>
+            <option value="hp">hp</option>
+        </select>
+        <br>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"  required>
+        <br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+
+        <label for="portfolio">Enter portfolio link</label>
+        <input type="url" name="url" id="portfolio">
+        <br>
+
+        <button type="submit">Submit</button>
+
+    </form>
 </body>
-
 </html>
